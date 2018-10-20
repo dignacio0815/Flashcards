@@ -18,19 +18,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3M8-43-VHT">
-                                <rect key="frame" x="45" y="238" width="285" height="190"/>
+                                <rect key="frame" x="45" y="75" width="285" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Manila" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lx-ou-Zgl" userLabel="Back Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="190"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="178"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.44970224476949794" blue="0.44124071841396906" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="LYN-FB-czo" appends="YES" id="lyL-1H-b15"/>
+                                        </connections>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the capital of the Phillipines? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agm-W0-Ieb" userLabel="Front Label ">
-                                        <rect key="frame" x="0.0" y="0.0" width="285" height="190"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the capital of the Phillipines? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agm-W0-Ieb" userLabel="Front Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="178"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.40748495542032537" green="0.45059968830247144" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -42,8 +46,38 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="xIG-W0-v0z" appends="YES" id="Axz-RO-yvT"/>
+                                    <outletCollection property="gestureRecognizers" destination="LYN-FB-czo" appends="YES" id="EPk-af-uSj"/>
+                                    <outletCollection property="gestureRecognizers" destination="zQy-Lm-tvi" appends="YES" id="htC-uf-1UW"/>
+                                    <outletCollection property="gestureRecognizers" destination="1ay-JO-aSG" appends="YES" id="aJz-oH-6mv"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWb-tf-Tx3" userLabel="btnOptionTwo">
+                                <rect key="frame" x="102" y="389" width="170" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Manila"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zQy-Lm-tvi" appends="YES" id="q92-RG-aay"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXb-m4-OtV" userLabel="btnOptionOne">
+                                <rect key="frame" x="102" y="308" width="170" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" Manudo"/>
+                                <connections>
+                                    <action selector="didTapOptionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lj-dk-1Gq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmR-qB-jcv" userLabel="btnOptionThree">
+                                <rect key="frame" x="102" y="462" width="170" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Salinas"/>
+                                <connections>
+                                    <action selector="didTapOptionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUG-Gk-Vda"/>
+                                    <outletCollection property="gestureRecognizers" destination="1ay-JO-aSG" appends="YES" id="iBF-E1-xTv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -55,15 +89,30 @@
                     <connections>
                         <outlet property="BackLabel" destination="1Lx-ou-Zgl" id="zdW-cz-z3a"/>
                         <outlet property="FrontLabel" destination="agm-W0-Ieb" id="U1p-fm-R9X"/>
+                        <outlet property="btnOptionOne" destination="QXb-m4-OtV" id="ToC-aK-JCI"/>
+                        <outlet property="btnOptionThree" destination="pmR-qB-jcv" id="0Xb-zy-W4c"/>
+                        <outlet property="btnOptionTwo" destination="oWb-tf-Tx3" id="kHW-GN-Fzy"/>
                         <outlet property="card" destination="3M8-43-VHT" id="5Eg-35-cAC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="xIG-W0-v0z">
+                <tapGestureRecognizer id="xIG-W0-v0z" userLabel="didTapOnFlashcard">
                     <connections>
                         <action selector="didTapOnFlashcard:" destination="BYZ-38-t0r" id="4L6-TM-iuM"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="LYN-FB-czo" userLabel="didTapOptionOne">
+                    <connections>
+                        <action selector="didTapOptionOne:" destination="BYZ-38-t0r" id="mif-qW-Aws"/>
+                        <outlet property="delegate" destination="QXb-m4-OtV" id="nMb-C1-8EB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="zQy-Lm-tvi" userLabel="didTapOptionTwo">
+                    <connections>
+                        <action selector="didTapOptionTwo:" destination="BYZ-38-t0r" id="nZ4-PE-mTm"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1ay-JO-aSG" userLabel="didTapOptionThree"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
